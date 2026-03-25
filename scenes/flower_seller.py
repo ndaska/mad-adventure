@@ -5,7 +5,7 @@
 """
 
 # Imports
-from scenes._registry import register
+from ._registry import register
 from engine import choose_option
 from utils import sleep
 
@@ -13,6 +13,7 @@ from utils import sleep
 
 @register
 def flower_seller_scene():
+
     print(f"\nOh! there is a distinctive smell, I love it...", end=' ')
     sleep(2.0)
     print("is that geranium?!")
