@@ -38,7 +38,7 @@ def dance_scene():
     sleep(3.0)
     print(f"These forest gnomes are my new best friends!")
     sleep(2.0)
-    print(f"\nHahaha well this is fun, but I would like to stop now")
+    print(f"\nHahaha well this is fun, but I would like to stop now.")
     sleep(1.0)
 
     dance_fever = chance_roll(25)
@@ -52,7 +52,7 @@ def dance_scene():
         sleep(1.0)   
         print(f"I CANNOT STOP DANCING!")
         sleep(1.0)  
-        print(f"Oh finally... I better leave these gnomes before they cast another spell")
+        print(f"Oh finally... I better leave these gnomes before they cast another spell.")
         sleep(1.0)
 
         return None
