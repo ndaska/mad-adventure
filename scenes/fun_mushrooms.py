@@ -4,7 +4,6 @@
 =====================================================================
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option
 from utils import sleep
@@ -30,8 +29,8 @@ def fun_mushrooms_scene():
 
 def dizzy_state():
     
-    print(f"\nOooh oOhH")
-    sleep(3.0)
+    print(f"\nOooh oOhH...")
+    sleep(2.0)
     print(f"Hmmm... I don't feel so good...")
     sleep(3.0)
     print(f"woooaah the coloours!")
@@ -40,7 +39,7 @@ def dizzy_state():
     sleep(2.0)
     print(f"...............")
     sleep(3.0)
-    print(f"\nWell that was not my smartest idea")
+    print(f"\nWell that was not my smartest idea...")
     sleep(1.0)
     print(f"But I think I feel better now... I can keep walking...")
 

@@ -4,7 +4,6 @@
 =====================================================================
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option, chance_roll
 from utils import sleep
@@ -20,7 +19,7 @@ def forest_gnomes_scene():
     sleep(2.0)
     print("are they FOREST GNOMES?")
     sleep(1.0)
-    print("\nThey are dancing!")
+    print("They are dancing!")
     sleep(1.0)
 
     next_scene = choose_option([

@@ -21,8 +21,8 @@ def wake_up_scene():
     print("an empty road... where should I go?")
 
     choose_option([
-        ("Go left" , None),
-        ("Go right", None)
+        ("go left" , None),
+        ("go right", None)
     ])
 
     print("\nLet's see what adventure awaits!")

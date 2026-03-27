@@ -4,7 +4,6 @@
 =====================================================================
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option, chance_roll
 from utils import sleep

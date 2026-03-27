@@ -1,10 +1,12 @@
 """
 =====================================================================
-  Scenes / Name of your scene
+  Scenes / <Name of your scene>
 =====================================================================
+
+If you are going to use this template, please remember to remove
+all comments and change variable names to more meaningful ones.
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option, chance_roll
 from utils import sleep
@@ -25,6 +27,7 @@ def example_scene():
     next_scene = choose_option([
         ('option 1', continuation_scene), # If you want option 1 to lead to a continuation_scene
         ('option 2', None)                # If you want option 2 to exit this scene and continue the game
+        # You can keep adding options
     ])
 
     return next_scene
@@ -50,5 +53,7 @@ def continuation_scene():
         #   False: to lose the game
     
     else:
+
+        print(f"\nThe roll failed...")
 
         return None
