@@ -1,10 +1,9 @@
 """
 =====================================================================
-  Scenes / Dragon Footprints Scene
+  Scenes / Dragon Footprints
 =====================================================================
 """
 
-# Imports
 from ._registry import register 
 from engine import choose_option, chance_roll
 from utils import sleep
@@ -20,12 +19,15 @@ def dragon_footprints_scene():
     sleep(2.0)
     print(" But what kind of animal would have footprints this big?")
     sleep(1.0)
+
     next_scene = choose_option([
         ('follow the footprints', footprints_cont),
         ('ignore and walk the other way', None)
     ])
 
     return next_scene
+
+# -----------------------------------------------
 
 def footprints_cont():
     
@@ -46,14 +48,14 @@ def footprints_cont():
         sleep(1.0)
         print(f"It's running towards me...")
         sleep(1.0)
-        print(f"AAAAAAAAAAAAAAAAAAAH")
+        print(f"AAAAAAAAAAAAAAAAAAAH!!!")
         
         return False
     
     else:
         
-        print(f"\nWell the footprints seem to end here")
+        print(f"\nWell the footprints seem to end here...")
         sleep(2.0)
-        print(f"I guess the mystery will never be solved... time to keep walking")
+        print(f"I guess the mystery will never be solved... time to keep walking.")
         
         return None
