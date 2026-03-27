@@ -4,10 +4,11 @@
 =====================================================================
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option, chance_roll
 from utils import sleep
+
+# ===== Scene =======================================================
 
 @register
 def scarf_scene():
@@ -24,12 +25,15 @@ def scarf_scene():
 
     return next_scene
 
+# -----------------------------------------------
+
 def scarf_taken():
     
     print(f"This scarf feels so familiar...")
     sleep(1.0)
     print(f"The scent... I can almost remember...")
     sleep(1.0)
+
     find_friend = chance_roll(30)
     
     if find_friend:
@@ -44,9 +48,9 @@ def scarf_taken():
     
     else:
         
-        print(f"\nI can't reach the memory but I think it was a good one")
+        print(f"\nI can't reach the memory but I think it was a good one.")
         sleep(1.0) 
-        print(f"\nI feel like this scarf will protect me...")
+        print(f"I feel like this scarf will protect me...")
         sleep(1.0)
         print(f"I can keep going now")
         sleep(1.0)

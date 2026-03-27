@@ -4,14 +4,13 @@
 =====================================================================
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option, chance_roll
 from utils import sleep
 
 # ===== Scene =======================================================
 
-@register    # You need to register the entry scene of your arc (and add the module to the scenes.__init__.py file.
+@register
 def fountain_scene():
     
     print(f"\nYou reached a fountain...", end=" ", flush=True)
@@ -19,7 +18,6 @@ def fountain_scene():
     print("and it has water!")
     sleep(1.0)
 
-    # You can add options for the player to choose from like this:
     next_scene = choose_option([
         ('Drink water', drink_water), 
         ('Leave', None)               

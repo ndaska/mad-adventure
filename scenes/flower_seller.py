@@ -4,7 +4,6 @@
 =====================================================================
 """
 
-# Imports
 from ._registry import register
 from engine import choose_option
 from utils import sleep
